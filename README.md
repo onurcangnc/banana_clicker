@@ -10,7 +10,8 @@ This Python script automates mouse clicks on a specific image found on your scre
 - [Usage](#usage)
 - [Customization](#customization)
 - [How It Works](#how-it-works)
-- [License](#license)
+- [Contributing](#contributing)
+
 
 
 
@@ -30,24 +31,30 @@ pip install pyautogui pynput pillow
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 
 ```bash
 git clone https://github.com/yourusername/fast-clicker-bot.git
 cd fast-clicker-bot
 ```
 
-2. Place the image you want to click on (banana.png in this example) in the same directory as the script:
+2. **Place the image you want to click on (banana.png in this example) in the same directory as the script:**
 
 
 
 ### Usage
 
-Run the script:
+1. **Run the script:**
 
 ```bash
 python fast_clicker_bot.py
 ```
+
+2. **Controls:**
+
+    - **Press `p`**: Pause the clicking
+    - **Press `c`**: Continue the clicking
+    - **Press `Esc`**: Stop the script
 
 ### How It Works
 
@@ -56,10 +63,28 @@ python fast_clicker_bot.py
 3. The `Pillow` library (imported as `PIL`) is used to handle the image to be clicked.
 
 
-### Customization
+## Demo Video
+
+Watch the demo video on YouTube:
+
+[![Fast Clicker Bot Demo](https://img.youtube.com/vi/FTtUtH62zKU/0.jpg)](https://www.youtube.com/watch?v=FTtUtH62zKU)
+
+
+## Customization
 
 You can adjust the speed of the clicking by modifying the `pyautogui.PAUSE` value and the `time.sleep()` duration.
 
-## License
+```python
+pyautogui.PAUSE = 0.00001
+# Adjust the sleep time in the loop
+time.sleep(0.1)
+```
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
+
+
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![PyAutoGUI](https://img.shields.io/badge/pyautogui-0.9.52-green)
+![Pillow](https://img.shields.io/badge/pillow-8.2.0-yellow)
